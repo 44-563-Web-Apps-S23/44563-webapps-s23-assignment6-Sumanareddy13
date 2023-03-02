@@ -37,7 +37,32 @@ function checkPainter (){
         out.innerHTML = "good/oops : " + good + "/" + oops
         alert("Sorry")
     }
+    if(oops==10){
+    }
 }
+</script>
+<div class="container-fluid">
+    
+    <img src="Pineapple.jpg" class="img-fluid" id="image" alt="Pineapple", onclick=selectImage() height=100, width=100>    
+</div>
+<script>
+     useImage =1
+    function selectImage(){
+        switch(useImage){
+            case 1:
+                document.getElementById("image").src="Lily-of-the-valley.jpg";
+                useImage++;
+                break
+            case 2:
+                document.getElementById("image").src="arum-lily.jpg";
+                useImage++;
+                break;
+            case 3:
+                document.getElementById("image").src="pineapple.jpg";
+                useImage=1
+                break;
+        }
+    }
 </script>
 
 </body>
